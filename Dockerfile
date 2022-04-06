@@ -16,8 +16,8 @@ RUN go mod download
 COPY . ./
 
 # Build the Go app
-RUN go build -o main .
-# RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+#RUN go build -o main .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
 
 # Expose port 8080 to the outside world
 # EXPOSE 8080
@@ -30,6 +30,6 @@ WORKDIR /root/
 # Copy the Pre-built binary file from the previous stage
 COPY --from=builder /app/main .
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 8086
 # Command to run the executable
 CMD ["./main"]
