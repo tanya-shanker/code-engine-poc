@@ -1,4 +1,4 @@
-package job
+package workspace
 
 import (
 	"fmt"
@@ -58,26 +58,11 @@ func GetWorkspaceList(url, token string) (DetailedResponse, error) {
 		return DetailedResponse{StatusCode: httpResponse.StatusCode}, err
 	}
 
-	// defer res.Body.Close()
-
-	// body, _ := ioutil.ReadAll(res.Body)
-
-	// //fmt.Println(string(body))
-
-	// err = json.Unmarshal(body, &list)
-	// if err != nil {
-	// 	fmt.Println("unmarshal error :", err)
-	// 	return Response{}, err
-	// }
-	// fmt.Println(list)
-
 	// Start to populate the DetailedResponse.
 	detailedResponse := &DetailedResponse{
 		StatusCode: httpResponse.StatusCode,
 		Headers:    httpResponse.Header,
 	}
-
-	//contentType := httpResponse.Header.Get(CONTENT_TYPE)
 
 	// If the operation was unsuccessful, then set up the DetailedResponse
 	// and error objects appropriately.
@@ -92,7 +77,7 @@ func GetWorkspaceList(url, token string) (DetailedResponse, error) {
 			defer httpResponse.Body.Close()
 			responseBody, readErr = ioutil.ReadAll(httpResponse.Body)
 			if readErr != nil {
-				err = fmt.Errorf(" ERRORMSG_READ_RESPONSE_BODY", readErr.Error())
+				err = fmt.Errorf(" ERRORMSG_READ_RESPONSE_BODY %s", readErr.Error())
 				return DetailedResponse{StatusCode: httpResponse.StatusCode}, err
 			}
 		}
