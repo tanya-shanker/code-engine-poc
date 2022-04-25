@@ -21,7 +21,7 @@ type COS_Result struct {
 }
 
 const (
-	OBJECT_NAME = "ts-poc-wkp-list-"
+	OBJECT_NAME = "ts-poc-wkp-create-"
 )
 
 func getURL(op string) string {
