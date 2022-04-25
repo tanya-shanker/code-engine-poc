@@ -1,0 +1,58 @@
+# github.com/tanya-shanker/code-engine-poc/workspace_test
+../job/job.go:43:5: expected 'package', found 'EOF'
+FAIL	github.com/tanya-shanker/code-engine-poc/workspace_test [setup failed]
+# github.com/tanya-shanker/code-engine-poc/workspace_test
+../job/job.go:43:5: expected 'package', found 'EOF'
+FAIL	github.com/tanya-shanker/code-engine-poc/workspace_test [setup failed]
+Running Suite: WorkspaceTest Suite
+==================================
+Random Seed: [1m1649268651[0m
+Will run [1m1[0m of [1m1[0m specs
+
+Getting workspace list
+[32m•[0m
+[1m[32mRan 1 of 1 Specs in 2.171 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m1 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 4.306262608s
+Test Suite Passed
+Running Suite: WorkspaceTest Suite
+==================================
+Random Seed: [1m1649314145[0m
+Will run [1m1[0m of [1m1[0m specs
+
+Getting workspace list
+[32m•[0m
+[1m[32mRan 1 of 1 Specs in 2.255 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m1 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 5.915152939s
+Test Suite Passed
+Running Suite: WorkspaceTest Suite
+==================================
+Random Seed: [1m1649693143[0m
+Will run [1m1[0m of [1m1[0m specs
+
+Getting workspace list
+[32m•[0m
+[1m[32mRan 1 of 1 Specs in 2.132 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m1 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 10.684086864s
+Test Suite Passed
+Running Suite: WorkspaceTest Suite
+==================================
+Random Seed: [1m1649693515[0m
+Will run [1m1[0m of [1m1[0m specs
+
+Getting workspace list
+[32m•[0m
+[1m[32mRan 1 of 1 Specs in 1.815 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m1 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 5.08656458s
+Test Suite Passed

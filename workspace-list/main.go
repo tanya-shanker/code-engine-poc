@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/tanya-shanker/code-engine-poc/workspace"
+	"github.com/tanya-shanker/code-engine-poc/workspace-list/workspace"
 )
 
 // Entry point of application
